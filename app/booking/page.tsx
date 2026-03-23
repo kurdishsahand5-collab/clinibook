@@ -244,8 +244,7 @@ export default function BookingPage() {
                     <div style={{ background: t.surface, borderRadius: '16px', padding: '24px', boxShadow: '0 2px 12px rgba(0,0,0,0.06)', transition: 'background 0.3s' }}>
                         <h3 style={{ fontSize: '15px', fontWeight: '700', color: t.text, marginBottom: '16px' }}>{tr('book_clinic_info')}</h3>
                         {[
-                            {
-                               { icon: MapPin, label: tr('book_location'), value: (config as any).address || (config as any).city || 'Sulaymaniyah, Iraq' },
+                            { icon: MapPin, label: tr('book_location'), value: (config as any).address || (config as any).city || 'Sulaymaniyah, Iraq' },
                             { icon: Phone, label: tr('book_phone_label'), value: config.phone || '+964 750 000 0000' },
                             { icon: Clock, label: tr('book_hours'), value: tr('hours_value') },
                             { icon: Stethoscope, label: tr('book_clinic_label'), value: config.clinicName },
